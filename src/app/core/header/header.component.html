@@ -1,1 +1,20 @@
-<p>header works!</p>
+<div>
+    <li (click)="routerclick('/index/animate')" >animate</li>
+    <!-- <li (click)="routerclick('/index/home')" >home</li> -->
+</div>
+
+<style> 
+div{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+li{
+    list-style: none;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    
+}
+</style>
