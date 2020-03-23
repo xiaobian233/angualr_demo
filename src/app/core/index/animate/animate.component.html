@@ -1,3 +1,21 @@
-<p>
-  animate works!
-</p>
+<h3>this is anitame-angular</h3>
+<br>
+<div class="div" [@divAnimate1]="divAnimateState" (click)="animateClick()"></div>
+<style>
+  .div{
+    width: 100px;
+    height: 100px;
+    background-color:black;
+    overflow: hidden;
+    margin: 0 0 100px 0;
+  }
+</style>
+<div class="div2"  [@divAnimate2]="divAnimateState" (click)="animateClick()"></div>
+<style>
+  .div2{
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+</style>
