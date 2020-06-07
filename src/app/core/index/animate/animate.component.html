@@ -1,19 +1,21 @@
 <h3>this is anitame-angular</h3>
 <br>
-<div class="div" [@divAnimate1]="divAnimateState" (click)="animateClick()"></div>
+<div class="div" [@animate1]="animateState" (click)="animateClick()"></div>
 <style>
   .div{
     width: 100px;
     height: 100px;
-    background-color:black;
+    background-color:#000000;
     overflow: hidden;
     margin: 0 0 100px 0;
+    display: inline-block;
   }
 </style>
-<div class="div2"  [@divAnimate2]="divAnimateState" (click)="animateClick()"></div>
+<div class="div2"  [@animate2]="animateState" (click)="animateClick()"></div>
 <style>
   .div2{
     overflow: hidden;
+    display: inline-block;
     width: 100px;
     height: 100px;
     background-color: red;

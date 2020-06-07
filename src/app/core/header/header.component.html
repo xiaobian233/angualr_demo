@@ -1,26 +1,42 @@
 <div>
-    <li (click)="routerclick('/index/animate')" >animate</li>
-    <!-- <li (click)="routerclick('/index/home')" >home</li> -->
+    <li [routerLink]="['/index/animate']" routerLinkActive="active">Animate</li>
+    <li [routerLink]="['/index/onPush']" routerLinkActive="active">OnPush</li>
+    <li [routerLink]="['/index/diretive']" routerLinkActive="active">Directive</li>
+    <li [routerLink]="['/index/ngModel']" routerLinkActive="active">ngModel</li>
+    <li [routerLink]="['/index/rxjs']" routerLinkActive="active">rxjs</li>
+    <li [routerLink]="['/index/redux']" routerLinkActive="active">redux</li>
 </div>
 
-<style> 
-div{
-    width: 100%;
-    display: flex;
-    justify-content:space-evenly;
-    
-}
-li{
-    list-style: none;
-    height: 36px;
-    line-height: 36px;
-    width: 100px;
-    text-align: center;
-    cursor: pointer;
-    background-color: greenyellow;
-    transition: all 0.68s;
-}
-li:hover{
-    background-color: red;
-}
+<style>
+    div {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 8px;
+    }
+
+    li {
+        list-style: none;
+        height: 42px;
+        line-height: 42px;
+        width: 100px;
+        text-align: center;
+        cursor: pointer;
+        background-color: greenyellow;
+        transition: all 0.68s;
+        border-radius: 10px;
+    }
+
+    li:hover {
+        background-color: red;
+    }
+    li:active,li:focus{
+        border: none;
+        outline:none;
+    }
 </style>
+<!-- 
+(click)="routerclick('/index/animate')"  
+(click)="routerclick('/index/onPush')"   
+(click)="routerclick('/index/diretive')" 
+(click)="routerclick('/index/ngModel')"   -->

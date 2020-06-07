@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
+  constructor(@Inject('BASE_HTTTP') config){
+    console.log(config,"HTTP");
+    
+  }
+
   title = 'angular3';
   selectedValue:any="";
 

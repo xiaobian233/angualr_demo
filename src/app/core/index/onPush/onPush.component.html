@@ -1,0 +1,19 @@
+<h3>this is onPush-angular</h3>
+<br>
+
+<ul>
+  <li *ngFor="let item of arr">
+    <span>{{item.name}}</span> <span style="margin: 0 0 0 32px;" (click)="delete(item.id)">删除</span>
+  </li>
+</ul>
+ 
+<style>                         
+  li{
+    padding: 8px;
+  }
+  ul>li>span:nth-child(2){
+    cursor: pointer;
+    color: red;
+  }
+</style>
+
